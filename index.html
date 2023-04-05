@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+    <script>
+      function validar() {
+        var mensaje = "error, digite Javier"
+        var nombre = document.forms["miFormulario"]["nombre"].value;
+        if (nombre == "javier" && direccion ==! "") {
+          document.body.style.backgroundColor = "green";
+        } else {
+          document.body.style.backgroundColor = "red";
+          alert(mensaje);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="miFormulario" onsubmit="validar()">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required><br><br>
+      <label>Direccion:</label>
+
+      <input type="text" name=" direccion" required><br><br>
+      <label>Comuna:</label>
+
+      <input type="text" name="Comuna" required><br><br>
+      <label>Rut:</label>
+
+      <input type="text" name="Rut" required><br><br>
+      <label>Apellido</label>
+
+      <input type="text" name="Apellido" required><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
